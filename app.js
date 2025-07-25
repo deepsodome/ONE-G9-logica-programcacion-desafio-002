@@ -1,36 +1,22 @@
-// inician preguntas
+// desafío 1 
 
-let diaDeLaSemana = prompt('¿Hola! - Qué día de la semana es hoy?'); // crea variable para guardar dias de la semana y lanza popup
-if (diaDeLaSemana === 'Sábado' || diaDeLaSemana === 'Domingo') { // compara si es sábado o domingo
-    alert('¡Que tenmgas un divertido fin de semana!');  // despliega alert con mensaje
-} else {
-    alert('¡Ten una increíble y productiva semana!'); // si es diferente a sábado o domingo lanza alert con mensaje
+alert('¡Bienvenido a nuestro sitio web!');      // lanza mensaje de alerta
+let nombre = "Lua";     //crea variable y asigna valor caracrteres
+let edad = 25;      //crea variable y asigna valor de 25
+let numeroDeVentas = 50;        //crea variable y asigna valor de 50
+let saldoDisponible = 1000;     //crea variable y asigna valor de 1000
+
+// alert('¡Error! Completa todos los campos');     //lanza mensaje de error
+
+let mensajeDeError = '¡Error! Completa todos los campos';   ////crea variable y asigna valor texto
+
+alert(mensajeDeError);      //lanza mensaje de alerta
+nombre = prompt('Escribe tu nombre');   //asigna valor a variable con prompr del usuario
+edad = prompt('Escribe tu edad');       // asigna valor a variable conpropmt del usuario
+
+if (edad >= 18) {       //compara que variable sea mayor o igual a 18
+    alert(nombre + ' ¡Puedes obtener tu licencia de conducir!');    //si es verdadero lanza mensaje de alerta positivo
 }
-
-
-let numero = prompt('Escribe un número que sea positivo o negativo'); //crea variable para guardar dias número y lanza popup
-if (numero > 0) {       // compara si es mayor a cero
-    alert('Ese fue un +Número positivo+');  // despliega alert con mensaje
-} else if (numero < 0) {  
-    alert('Escribiste un -Número negativo-');   // si es diferente a sábado o domingo lanza alert con mensaje
-} else {
-    alert('El número es cero');   // si es diferente a sábado o domingo lanza alert con mensaje
+else { 
+    alert(nombre + ' ¡No puedes obtener tu licencia de conducir!');     //si es falso lanza mensaje de alerta negativo
 }
-
-
-let puntuacion = 105;   //crea variable e inicializa con 105
-if (puntuacion >= 100) {    // compara si la varible es mayor o igual a 100
-    console.log('¡Enhorabuena, has ganado!');       //envía dato a consola
-} else {
-    console.log('Inténtalo de nuevo para ganar.');      // si es menor a 100 despliega mensaje
-}
-
-
-
- let saldoCuenta = 500; // Ejemplo de saldo
-alert(`Tu saldo es de ${saldoCuenta}.`);    //encía mensaje de saldo
-
-
-
-let nombre = prompt('Por favor, ingresa tu nombre');    //crea variable pide un nombre
-alert(`¡Bienvenido, ${nombre}!`);   // despliega alert con mensaje con el nombre capturado
